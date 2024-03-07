@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 1 - Desenvolvimento Web Mobile</title>
+
+</head>
+
+<body>
+    <h1>Aula 1 - Desenvolvimento Web Mobile</h1>
+    <h2>Aula 1 - Desenvolvimento Web Mobile</h2>
+    <h3>Aula 1 - Desenvolvimento Web Mobile</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, vel. Possimus voluptatibus iusto magnam quo!
+        Libero, voluptatum deserunt. Modi pariatur voluptate laudantium inventore maxime ut quasi libero omnis earum
+        temporibus.</p>
+    <img src="img/brasao.png" alt="" title="Brasão" width="200" height="200">
+    <a href="https://ww2.uft.edu.br//" target="blank">Link da página da UFT</a>
+
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+        <li>Item D</li>
+    </ul>
+
+    <label for="rangeInput">Selecione um Valor:</label>
+    <input type="range" id="rangeInput" name="rangeInput" min="0" max="100" value="50"
+        oninput="updateValue(this.value)">
+    <p>Valor Selecionado: <span id="displayValue">50</span></p>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Coluna1</th>
+                <th>Coluna2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dado 1A</td>
+                <td>Dado 1B</td>
+            </tr>
+            <tr>
+                <td>Dado 2A</td>
+                <td>Dado 2B</td>
+            </tr>
+            <tr>
+                <td>Dado 3A</td>
+                <td>Dado 3B</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>GET</h2>
+    <form action="/processar-get" method="get">
+        <label for="nome-get">Nome:</label>
+        <input type="text" id="nome-get" name="nome" required>
+
+        <label for="email-get">E-mail:</label>
+        <input type="email" id="email-get" name="email" required>
+        <!-- Checkbox -->
+        <input type="checkbox" name="checkbox">
+
+        <!-- Radio -->
+        <!-- Opção 1: Carro -->
+        <input type="radio" name="veiculo" value="carro"> Carro
+
+        <!-- Opção 2: Moto -->
+        <input type="radio" name="veiculo" value="moto"> Moto
+
+        <!-- Opção 3: Bicicleta -->
+        <input type="radio" name="veiculo" value="bicicleta"> Bicicleta
+
+        <!-- Select -->
+        <select name="fruta">
+            <option value="maca">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+            <option value="uva">Uva</option>
+        </select>
+
+        Data: <input type="date" name="dataNascimento">
+
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>POST</h2>
+    <form action="/processar-post" method="post">
+        <label for="nome-get">Nome:</label>
+        <input type="text" id="nome-get" name="nome" required>
+
+        <label for="email-get">E-mail:</label>
+        <input type="email" id="email-get" name="email" required>
+        <!-- Checkbox -->
+        <input type="checkbox" name="checkbox">
+
+        <!-- Radio -->
+        <!-- Opção 1: Carro -->
+        <input type="radio" name="veiculo" value="carro"> Carro
+
+        <!-- Opção 2: Moto -->
+        <input type="radio" name="veiculo" value="moto"> Moto
+
+        <!-- Opção 3: Bicicleta -->
+        <input type="radio" name="veiculo" value="bicicleta"> Bicicleta
+        <!-- Select -->
+        <select name="fruta">
+            <option value="maca">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+            <option value="uva">Uva</option>
+        </select>
+
+        Data: <input type="date" name="dataNascimento">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <textarea name="mensagem" rows="4" cols="50"></textarea>
+
+    <input list="cheeses">
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+      </datalist>
+
+    <!-- Campo Input Hidden -->
+    <input type="hidden" id="frutaHidden" name="frutaHidden" value="">
+
+    <script src="js/funcoes.js"></script>
+
+</body>
+
+</html>
